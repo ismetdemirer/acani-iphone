@@ -40,6 +40,15 @@
 		C91FE81612274DB3003C266E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91FE81512274DB3003C266E /* CoreData.framework */; };
 		C91FE8AA12289596003C266E /* Lovers.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C91FE8A912289596003C266E /* Lovers.xcdatamodel */; };
 		C93532E61235AE2800AC54F8 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = C93532D71235AE2800AC54F8 /* Message.m */; };
+		C93533971235C8B400AC54F8 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = C93533861235C8B300AC54F8 /* Account.m */; };
+		C93533981235C8B400AC54F8 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = C93533881235C8B300AC54F8 /* Channel.m */; };
+		C93533991235C8B400AC54F8 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = C935338A1235C8B300AC54F8 /* Group.m */; };
+		C935339A1235C8B400AC54F8 /* LauncherItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C935338C1235C8B400AC54F8 /* LauncherItem.m */; };
+		C935339B1235C8B400AC54F8 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = C935338E1235C8B400AC54F8 /* Location.m */; };
+		C935339C1235C8B400AC54F8 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = C93533901235C8B400AC54F8 /* Photo.m */; };
+		C935339D1235C8B400AC54F8 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = C93533921235C8B400AC54F8 /* Picture.m */; };
+		C935339E1235C8B400AC54F8 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = C93533941235C8B400AC54F8 /* Profile.m */; };
+		C935339F1235C8B400AC54F8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C93533961235C8B400AC54F8 /* User.m */; };
 		C96BD0B4122E0485002CCDE0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96BD0B3122E0485002CCDE0 /* AudioToolbox.framework */; };
 		C96BD0D4122E0A18002CCDE0 /* basicsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C96BD0D3122E0A18002CCDE0 /* basicsound.wav */; };
 		C9F1923E121B60E700CAB471 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F1923D121B60E700CAB471 /* CFNetwork.framework */; };
@@ -106,6 +115,24 @@
 		C91FE8A912289596003C266E /* Lovers.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; name = Lovers.xcdatamodel; path = Classes/Lovers.xcdatamodel; sourceTree = "<group>"; };
 		C93532D61235AE2800AC54F8 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		C93532D71235AE2800AC54F8 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		C93533851235C8B300AC54F8 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		C93533861235C8B300AC54F8 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		C93533871235C8B300AC54F8 /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		C93533881235C8B300AC54F8 /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		C93533891235C8B300AC54F8 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		C935338A1235C8B300AC54F8 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		C935338B1235C8B400AC54F8 /* LauncherItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherItem.h; sourceTree = "<group>"; };
+		C935338C1235C8B400AC54F8 /* LauncherItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherItem.m; sourceTree = "<group>"; };
+		C935338D1235C8B400AC54F8 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		C935338E1235C8B400AC54F8 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		C935338F1235C8B400AC54F8 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		C93533901235C8B400AC54F8 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		C93533911235C8B400AC54F8 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		C93533921235C8B400AC54F8 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		C93533931235C8B400AC54F8 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		C93533941235C8B400AC54F8 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		C93533951235C8B400AC54F8 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C93533961235C8B400AC54F8 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C96BD0B3122E0485002CCDE0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C96BD0D3122E0A18002CCDE0 /* basicsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = basicsound.wav; sourceTree = "<group>"; };
 		C9F1923D121B60E700CAB471 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -199,6 +226,24 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C93533851235C8B300AC54F8 /* Account.h */,
+				C93533861235C8B300AC54F8 /* Account.m */,
+				C93533871235C8B300AC54F8 /* Channel.h */,
+				C93533881235C8B300AC54F8 /* Channel.m */,
+				C93533891235C8B300AC54F8 /* Group.h */,
+				C935338A1235C8B300AC54F8 /* Group.m */,
+				C935338B1235C8B400AC54F8 /* LauncherItem.h */,
+				C935338C1235C8B400AC54F8 /* LauncherItem.m */,
+				C935338D1235C8B400AC54F8 /* Location.h */,
+				C935338E1235C8B400AC54F8 /* Location.m */,
+				C935338F1235C8B400AC54F8 /* Photo.h */,
+				C93533901235C8B400AC54F8 /* Photo.m */,
+				C93533911235C8B400AC54F8 /* Picture.h */,
+				C93533921235C8B400AC54F8 /* Picture.m */,
+				C93533931235C8B400AC54F8 /* Profile.h */,
+				C93533941235C8B400AC54F8 /* Profile.m */,
+				C93533951235C8B400AC54F8 /* User.h */,
+				C93533961235C8B400AC54F8 /* User.m */,
 				C93532D61235AE2800AC54F8 /* Message.h */,
 				C93532D71235AE2800AC54F8 /* Message.m */,
 				C96BD0D3122E0A18002CCDE0 /* basicsound.wav */,
@@ -372,6 +417,15 @@
 				C91FE7691225FEAC003C266E /* ZTWebSocket.m in Sources */,
 				C91FE8AA12289596003C266E /* Lovers.xcdatamodel in Sources */,
 				C93532E61235AE2800AC54F8 /* Message.m in Sources */,
+				C93533971235C8B400AC54F8 /* Account.m in Sources */,
+				C93533981235C8B400AC54F8 /* Channel.m in Sources */,
+				C93533991235C8B400AC54F8 /* Group.m in Sources */,
+				C935339A1235C8B400AC54F8 /* LauncherItem.m in Sources */,
+				C935339B1235C8B400AC54F8 /* Location.m in Sources */,
+				C935339C1235C8B400AC54F8 /* Photo.m in Sources */,
+				C935339D1235C8B400AC54F8 /* Picture.m in Sources */,
+				C935339E1235C8B400AC54F8 /* Profile.m in Sources */,
+				C935339F1235C8B400AC54F8 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

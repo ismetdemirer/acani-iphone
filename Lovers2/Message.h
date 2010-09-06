@@ -1,25 +1,37 @@
+//
+//  Message.h
+//  Lovers
+//
+//  Created by Matt Di Pasquale on 9/6/10.
+//  Copyright 2010 Diamond Dynasties, Inc. All rights reserved.
+//
+
 #import <CoreData/CoreData.h>
 
-@interface Message : NSManagedObject {
+@class Channel;
+@class Photo;
+@class Profile;
+
+@interface Message :  NSManagedObject  
+{
 }
 
-@property (nonatomic, retain) NSString * sender;
-@property (nonatomic, retain) NSString * channel;
-@property (nonatomic, retain) NSNumber * timestamp;
+@property (nonatomic, retain) NSDate * dateSent;
 @property (nonatomic, retain) NSNumber * unread;
 @property (nonatomic, retain) NSString * text;
+@property (nonatomic, retain) Profile * source;
+@property (nonatomic, retain) Channel * channel;
+@property (nonatomic, retain) NSSet* targets;
+@property (nonatomic, retain) Photo * photo;
 
 @end
 
-//MessageOld.h
-//
-//@interface Message : NSObject {
-//	NSString *sender;
-//	NSString *channel; // uid1_uid2
-//	time_t timestamp;
-//	NSString *text;
-//}
-//
-//- (id)initWithDictionary:(NSDictionary *)dictionary;
-//
-//@end
+
+@interface Message (CoreDataGeneratedAccessors)
+- (void)addTargetsObject:(Profile *)value;
+- (void)removeTargetsObject:(Profile *)value;
+- (void)addTargets:(NSSet *)value;
+- (void)removeTargets:(NSSet *)value;
+
+@end
+

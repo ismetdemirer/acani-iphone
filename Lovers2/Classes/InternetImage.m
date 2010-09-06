@@ -135,6 +135,7 @@ static enum downloadType _data = _json;
 
 
 - (NSMutableArray *)createUsers: (NSString *)jsonResponse {
+	NSManagedObjectContext *managedObjectContext = [(LoversAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
 	NSError *error = nil;
 	NSMutableArray *users = [NSMutableArray array];
     if (jsonResponse) {
@@ -143,8 +144,19 @@ static enum downloadType _data = _json;
         [json release];
         NSLog(@"result count %d",[results count]);
         for (NSDictionary *dictionary in results) {
-            User *user = [[User alloc] initWithJsonDictionary:dictionary];
-            [users addObject:user];
+			User *user = (User *)[NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:managedObjectContext];
+			[user setUid:[[dictionary valueForKey:@"_id"] valueForKey:@"$oid"]];
+			[user setFbid:[[dictionary objectForKey:@"fbid"]]];
+			[user setName:[dictionary objectForKey:@"name"]];
+			[user setAbout:[dictionary objectForKey:@"about"]];
+			[user setHead:[dictionary objectForKey:@"head"]];
+			[user setEthnic:[dictionary objectForKey:@"ethnic"]];
+			[user setLikes:[dictionary objectForKey:@"likes"]];
+			[user setWeight:[dictionary objectForKey:@"weight"]];
+			[user setHeight:[dictionary objectForKey:@"height"]];
+			[user setAge:[dictionary objectForKey:@"age"]];
+			[user setFbLink:[dictionary objectForKey:@"fb_link"]];
+			[users addObject:user];
             [user release];
         }
     }

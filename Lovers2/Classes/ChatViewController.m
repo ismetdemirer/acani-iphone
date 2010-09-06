@@ -364,6 +364,8 @@
 	}
 	
 	NSManagedObjectContext *managedObjectContext = [(LoversAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+	Channel *chn = (Channel *)[NSEntityDescription insertNewObjectForEntityForName:@"Channel" inManagedObjectContext:managedObjectContext];
+	[chn setName:channel];
 	Message *msg = (Message *)[NSEntityDescription insertNewObjectForEntityForName:@"Message" inManagedObjectContext:managedObjectContext];
 	[msg setText:chatInput.text];
 	[msg setSender:@"me"];
